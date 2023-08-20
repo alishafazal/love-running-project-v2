@@ -45,6 +45,45 @@ header a {
     color: inherit;
 }
 
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu>li {
+    margin-bottom: 1em;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navbar styles with dropdown toggle*/
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top: 100%;
+}
+
+/*Nav toggle*/
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 /*Main content*/
 main {
     /*Make main element take up any surplus space to push footer down*/
@@ -61,7 +100,7 @@ main {
 }
 
 #cover-text {
-    /*Fianl rgba value sets the opacity so it is semi transparent*/
+    /*Final rgba value sets the opacity so it is semi transparent*/
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
@@ -104,43 +143,21 @@ main {
     margin: 5px 0;
 }
 
-#menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+#circle-cover-bg {
+    background: url('../images/reasons-image.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    /*Makes the square image into a circle*/
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
-#menu>li {
-    margin-bottom: 1em;
-}
-
-.active {
-    border-bottom: 1px solid #3a3a3a;
-}
-
-/*Navbar styles with dropdown toggle*/
-nav {
-    position: absolute;
-    background-color: #ffffff;
-    width: 100%;
-    left: 0;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top: 100%;
-}
-
-/*Nav toggle*/
-#nav-toggle:checked~nav {
-    display: block;
-}
-
-#nav-toggle {
-    display: none;
-}
-
-.nav-toggle-label {
-    font-size: 2rem;
+#benefits-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Footer*/
